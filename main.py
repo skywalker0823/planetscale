@@ -135,21 +135,30 @@ def run():
             3. 建立table queue
             4. 建立queue2
             5. 刪除所有table queue & queue2
-            6. 新增排隊資料
-            7. 查詢排隊資料
-            8. 修改排隊資料
-            9. 刪除排隊資料
+            6. C-新增排隊資料
+            7. R-查詢排隊資料
+            8. U-修改排隊資料
+            9. D-刪除排隊資料
             10. 修改queue表格
             Q/q. 離開
             """
             )
             result = options.get(select, db.invalid_selection)()
-            print(result)
+            print(f"\n{result}\n")
 
     except Exception as e:
-        print("Exeception occured:{}".format(e))
+        print("Exeception occured:{}".format(e))        
     finally:
         db.close()
 
 if __name__ == "__main__":
     run()
+
+
+
+
+# Basic usage
+# Fill in the .env file with your db credentials
+# source venv/bin/activate
+# pip install -r requirements.txt
+# python3 main.py

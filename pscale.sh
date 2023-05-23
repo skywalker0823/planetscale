@@ -46,14 +46,9 @@ CREATE TABLE `queue` (
     `size` INT
     )
 
-#修改
-CREATE TABLE `queue` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY, 
-    `name` VARCHAR(255), 
-    `phone` VARCHAR(255), 
-    `size` INT,
-    `more` VARCHAR(255)
-    )
+#修改增加 more column
+ALTER TABLE queue ADD COLUMN `more` VARCHAR(255);
+
 #新增
 CREATE TABLE `queue2` (
     `id` INT AUTO_INCREMENT PRIMARY KEY, 
