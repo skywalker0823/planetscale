@@ -46,6 +46,10 @@ CREATE TABLE `queue` (
     `size` INT
     )
 
+CREATE TABLE `counter` (
+    `count` INT
+)
+
 #修改增加 more column
 ALTER TABLE queue ADD COLUMN `more` VARCHAR(255);
 
@@ -56,6 +60,13 @@ CREATE TABLE `queue2` (
     `phone` VARCHAR(255), 
     `size` INT
     )
+
+# For chichivio
+CREATE TABLE `users` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY, 
+    `username` VARCHAR(255),
+    `password` VARCHAR(255)
+    );
 
 # --Test your changes~ --
 

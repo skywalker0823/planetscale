@@ -16,10 +16,10 @@ class DB:
             passwd= os.getenv("PASSWORD"),
             db= os.getenv("DATABASE"),
             autocommit = True,
-            ssl_mode = "VERIFY_IDENTITY",
-            ssl      = {
-                "ca": "/etc/ssl/cert.pem"
-            }
+            # ssl_mode = "VERIFY_IDENTITY",
+            # ssl      = {
+            #     "ca": "/etc/ssl/cert.pem"
+            # }
         )
         self.cursor = self.connection.cursor()
 
